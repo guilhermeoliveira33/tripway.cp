@@ -1,97 +1,64 @@
 <!DOCTYPE html>
-
 <html lang="pt-BR">
-
 <head>
-
     <meta charset="UTF-8">
-
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <link rel="stylesheet" href="../css/style.css">
-
     <title>Destinos - TripWay</title>
-
+    <link rel="stylesheet" href="../css/style.css">
 </head>
-
 <body>
 
     <header>
-
-        <h1>TripWay</h1>
-
+        <h1>Trip<span>Way</span></h1>
         <nav>
-
             <ul>
-
                 <li><a href="../index.html">Home</a></li>
-
-                <li><a href="destinos.html">Destinos</a></li>
-
-                <li><a href="pacotes.html">Pacotes</a></li>
-
-                <li><a href="contato.html">Contato</a></li>
-
+                <li><a href="./destinos.html">Destinos</a></li>
+                <li><a href="./pacotes.html">Pacotes</a></li>
+                <li><a href="./contato.html">Contato</a></li>
             </ul>
-
         </nav>
-
     </header>
 
     <main>
+        <h2 class="titulo-secao">Nossos Destinos em Destaque</h2>
+        
+        <div class="cards-container">
+            <!-- Card 1: Cidade Antiga (Do seu ZIP original) -->
+            <article class="card">
+                <img src="../images/cidade-europa.png" alt="Bela cidade europeia clássica com canais">
+                <div class="card-content">
+                    <h3>Europa Histórica</h3>
+                    <p>Caminhe por ruas centenárias, encante-se com a arquitetura neoclássica e explore o berço cultural do ocidente de perto.</p>
+                    <a href="./contato.html" class="btn">Tenho Interesse</a>
+                </div>
+            </article>
 
-        <section class="pagina">
+            <!-- Card 2: Praia Antiga (Do seu ZIP original) -->
+            <article class="card">
+                <img src="../images/praia-destino.avif" alt="Praia paradisíaca tropical com águas cristalinas">
+                <div class="card-content">
+                    <h3>Caribe Tropical</h3>
+                    <p>Desconecte-se da rotina estressante das grandes cidades e venha relaxar à beira-mar sob águas mornas e transparentes.</p>
+                    <a href="./contato.html" class="btn">Tenho Interesse</a>
+                </div>
+            </article>
 
-            <h2>Explore nossos destinos</h2>
-
-            <p>Encontre o lugar perfeito para sua próxima aventura.</p>
-
-            <div class="cards">
-
-                <article class="card">
-
-                    <img src="../images/praia-destino.avif" alt="Praia paradisíaca">
-
-                    <h3>Praias paradisíacas</h3>
-
-                    <p>Relaxe à beira-mar, aproveite o sol e conheça paisagens incríveis.</p>
-
-                </article>
-
-                <article class="card">
-
-                    <img src="../images/montanha-nevada1.png" alt="Montanhas cobertas de neve">
-
-                    <h3>Montanhas</h3>
-
-                    <p>Aventure-se em trilhas, descubra paisagens naturais e respire ar puro.</p>
-
-                </article>
-
-                <article class="card">
-
-                    <img src="../images/cidade-europa.png" alt="Cidade histórica europeia">
-
-                    <h3>Cidades históricas</h3>
-
-                    <p>Conheça culturas, monumentos, gastronomia e lugares cheios de história.</p>
-
-                </article>
-
-            </div>
-
-            <a class="botao" href="pacotes.html">Ver nossos pacotes</a>
-
-        </section>
-
+            <!-- Card 3: Imagem Nova de Santorini -->
+            <article class="card">
+                <img src="../images/santorini.jpg". alt="Casas brancas clássicas com cúpulas azuis em Santorini, na Grécia">
+                <div class="card-content">
+                    <h3>Grécia Paradisíaca</h3>
+                    <p>Explore as deslumbrantes vilas de Santorini, contemple o pôr do sol mais famoso do mundo e navegue pelas águas azuis do Mar Egeu.</p>
+                    <a href="./contato.html" class="btn">Tenho Interesse</a>
+                </div>
+            </article>
+        </div>
     </main>
 
     <footer>
-
-        <p>&copy; 2026 TripWay - Todos os direitos reservados.</p>
-
+        <p>&copy; 2026 TripWay Guia de Viagens. Todos os direitos reservados.</p>
     </footer>
 
 </body>
-
 </html>
