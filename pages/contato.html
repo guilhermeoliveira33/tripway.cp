@@ -1,57 +1,253 @@
 <!DOCTYPE html>
+
 <html lang="pt-BR">
+
 <head>
+
     <meta charset="UTF-8">
+
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>TripWay - Contato</title>
+
+    <title>Contato e Reservas - TripWay</title>
+
+    <link rel="stylesheet" href="../css/style.css">
+
 </head>
+
 <body>
 
     <header>
-        <h1>TripWay</h1>
+
+        <h1>Trip<span>Way</span></h1>
+
         <nav>
+
             <ul>
+
                 <li><a href="../index.html">Home</a></li>
-                <li><a href="destinos.html">Destinos</a></li>
-                <li><a href="pacotes.html">Pacotes ou Serviços</a></li>
-                <li><a href="contato.html">Contato</a></li>
+
+                <li><a href="./destinos.html">Destinos</a></li>
+
+                <li><a href="./pacotes.html">Pacotes</a></li>
+
+                <li><a href="./contato.html">Contato</a></li>
+
             </ul>
+
         </nav>
+
     </header>
 
     <main>
-        <section>
-            <h2>Entre em Contato / Faça a sua Reserva</h2>
-            <form action="#" method="post">
-                <label for="email">E-mail:</label><br>
-                <input type="email" id="email" name="email" required><br><br>
 
-                <label for="destino">Destino de Interesse:</label><br>
-                <select id="destino" name="destino">
-                    <option value="praia">Praia Paradisíaca</option>
-                    <option value="montanha">Montanhas Nevadas</option>
-                    <option value="cidade">Cidades Históricas</option>
-                </select><br><br>
+        <h2 class="titulo-secao">
 
-                <label for="data">Data de Viagem:</label><br>
-                <input type="date" id="data" name="data" required><br><br>
+            Reserve a sua Próxima Aventura
 
-                <label for="quantidade">Quantidade de Pessoas:</label><br>
-                <input type="number" id="quantidade" name="quantidade" min="1" required><br><br>
+        </h2>
 
-                <label for="mensagem">Mensagem:</label><br>
-                <textarea id="mensagem" name="mensagem" rows="5" required></textarea><br><br>
+        <div class="contato-wrapper">
 
-                <button type="submit">Enviar</button>
-            </form>
-            <br>
-            <img src="../images/contato-img.jpg" alt="Atendimento ao cliente e suporte ao viajante" width="700" height="465">
-        </section>
+            <div class="contato-img">
+
+                <img
+
+                    src="../images/contato-full.jpeg"
+
+                    alt="Atendimento de viagens com entrega de passagens"
+
+                >
+
+            </div>
+
+            <div class="form-container">
+
+                <form action="#" method="POST">
+
+                    <div class="form-group">
+
+                        <label id="lbl-nome" for="nome">
+
+                            Nome Completo
+
+                        </label>
+
+                        <input
+
+                            type="text"
+
+                            id="nome"
+
+                            name="nome"
+
+                            placeholder="Digite seu nome"
+
+                            required
+
+                        >
+
+                    </div>
+
+                    <div class="form-group">
+
+                        <label for="email">
+
+                            E-mail de Contato
+
+                        </label>
+
+                        <input
+
+                            type="email"
+
+                            id="email"
+
+                            name="email"
+
+                            placeholder="seuemail@exemplo.com"
+
+                            required
+
+                        >
+
+                    </div>
+
+                    <div class="form-group">
+
+                        <label for="destino">
+
+                            Destino de Interesse
+
+                        </label>
+
+                        <select id="destino" name="destino" required>
+
+                            <option value="" disabled selected>
+
+                                Selecione um destino
+
+                            </option>
+
+                            <option value="europa">
+
+                                Europa Histórica
+
+                            </option>
+
+                            <option value="alpes">
+
+                                Alpes de Aventura
+
+                            </option>
+
+                            <option value="tropicais">
+
+                                Paraísos Tropicais
+
+                            </option>
+
+                        </select>
+
+                    </div>
+
+                    <div class="form-group">
+
+                        <label for="data">
+
+                            Data de Embarque Pretendida
+
+                        </label>
+
+                        <input
+
+                            type="date"
+
+                            id="data"
+
+                            name="data"
+
+                            required
+
+                        >
+
+                    </div>
+
+                    <div class="form-group">
+
+                        <label for="pessoas">
+
+                            Quantidade de Pessoas
+
+                        </label>
+
+                        <input
+
+                            type="number"
+
+                            id="pessoas"
+
+                            name="pessoas"
+
+                            min="1"
+
+                            max="50"
+
+                            placeholder="1"
+
+                            required
+
+                        >
+
+                    </div>
+
+                    <div class="form-group">
+
+                        <label for="mensagem">
+
+                            Mensagem Especial / Detalhes
+
+                        </label>
+
+                        <textarea
+
+                            id="mensagem"
+
+                            name="mensagem"
+
+                            rows="4"
+
+                            placeholder="Alguma observação importante para o hotel ou restrição alimentar?"
+
+                        ></textarea>
+
+                    </div>
+
+                    <button type="submit" class="btn btn-block">
+
+                        Enviar Solicitação
+
+                    </button>
+
+                </form>
+
+            </div>
+
+        </div>
+
     </main>
 
     <footer>
-        <p>&copy; 2026 TripWay - Todos os direitos reservados.</p>
+
+        <p>
+
+            &copy; 2026 TripWay Guia de Viagens.
+
+            Todos os direitos reservados.
+
+        </p>
+
     </footer>
 
 </body>
+
 </html>
