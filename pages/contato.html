@@ -1,57 +1,103 @@
 <!DOCTYPE html>
+
 <html lang="pt-BR">
+
 <head>
+
     <meta charset="UTF-8">
+
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>TripWay - Contato</title>
+
+    <link rel="stylesheet" href="../css/style.css">
+
+    <title>Contato - TripWay</title>
+
 </head>
+
 <body>
 
     <header>
+
         <h1>TripWay</h1>
+
         <nav>
+
             <ul>
+
                 <li><a href="../index.html">Home</a></li>
+
                 <li><a href="destinos.html">Destinos</a></li>
-                <li><a href="pacotes.html">Pacotes ou Serviços</a></li>
+
+                <li><a href="pacotes.html">Pacotes</a></li>
+
                 <li><a href="contato.html">Contato</a></li>
+
             </ul>
+
         </nav>
+
     </header>
 
     <main>
-        <section>
-            <h2>Entre em Contato / Faça a sua Reserva</h2>
-            <form action="#" method="post">
-                <label for="email">E-mail:</label><br>
-                <input type="email" id="email" name="email" required><br><br>
 
-                <label for="destino">Destino de Interesse:</label><br>
-                <select id="destino" name="destino">
-                    <option value="praia">Praia Paradisíaca</option>
-                    <option value="montanha">Montanhas Nevadas</option>
-                    <option value="cidade">Cidades Históricas</option>
-                </select><br><br>
+        <section class="pagina contato">
 
-                <label for="data">Data de Viagem:</label><br>
-                <input type="date" id="data" name="data" required><br><br>
+            <h2>Vamos planejar sua próxima viagem?</h2>
 
-                <label for="quantidade">Quantidade de Pessoas:</label><br>
-                <input type="number" id="quantidade" name="quantidade" min="1" required><br><br>
+            <p>Preencha o formulário e conte para nós o que você procura.</p>
 
-                <label for="mensagem">Mensagem:</label><br>
-                <textarea id="mensagem" name="mensagem" rows="5" required></textarea><br><br>
+            <form action="#" method="get">
 
-                <button type="submit">Enviar</button>
+                <label for="nome">Nome completo</label>
+
+                <input type="text" id="nome" name="nome" required>
+
+                <label for="email">E-mail</label>
+
+                <input type="email" id="email" name="email" required>
+
+                <label for="destino">Destino desejado</label>
+
+                <select id="destino" name="destino" required>
+
+                    <option value="">Selecione um destino</option>
+
+                    <option value="praia">Praias paradisíacas</option>
+
+                    <option value="montanha">Montanhas</option>
+
+                    <option value="europa">Cidades históricas</option>
+
+                    <option value="outro">Outro destino</option>
+
+                </select>
+
+                <label for="data">Data prevista da viagem</label>
+
+                <input type="date" id="data" name="data" required>
+
+                <label for="pessoas">Quantidade de pessoas</label>
+
+                <input type="number" id="pessoas" name="pessoas" min="1" value="1" required>
+
+                <label for="mensagem">Conte mais sobre sua viagem</label>
+
+                <textarea id="mensagem" name="mensagem" rows="5" placeholder="Escreva sua mensagem..."></textarea>
+
+                <button type="submit">Enviar solicitação</button>
+
             </form>
-            <br>
-            <img src="../images/contato-img.jpg" alt="Atendimento ao cliente e suporte ao viajante" width="700" height="465">
+
         </section>
+
     </main>
 
     <footer>
+
         <p>&copy; 2026 TripWay - Todos os direitos reservados.</p>
+
     </footer>
 
 </body>
+
 </html>
