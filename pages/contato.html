@@ -1,103 +1,87 @@
 <!DOCTYPE html>
-
 <html lang="pt-BR">
-
 <head>
-
     <meta charset="UTF-8">
-
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
+    <title>Contato e Reservas - TripWay</title>
     <link rel="stylesheet" href="../css/style.css">
-
-    <title>Contato - TripWay</title>
-
 </head>
-
 <body>
 
     <header>
-
-        <h1>TripWay</h1>
-
+        <h1>Trip<span>Way</span></h1>
         <nav>
-
             <ul>
-
                 <li><a href="../index.html">Home</a></li>
-
-                <li><a href="destinos.html">Destinos</a></li>
-
-                <li><a href="pacotes.html">Pacotes</a></li>
-
-                <li><a href="contato.html">Contato</a></li>
-
+                <li><a href="./destinos.html">Destinos</a></li>
+                <li><a href="./pacotes.html">Pacotes</a></li>
+                <li><a href="./contato.html">Contato</a></li>
             </ul>
-
         </nav>
-
     </header>
 
     <main>
+        <h2 class="titulo-secao">Reserve a sua Próxima Aventura</h2>
 
-        <section class="pagina contato">
+        <!-- Força o alinhamento pelo topo (flex-start) para a foto não esticar com a altura do formulário -->
+        <div class="contato-wrapper" style="display: flex; gap: 3rem; align-items: flex-start !important;">
+            
+            <!-- Define uma largura menor (40%) e uma altura fixa menor e controlada (480px) -->
+            <div class="contato-img" style="width: 40% !important; height: 480px !important; position: relative; overflow: hidden; border-radius: 10px;">
+                <img src="../images/contato-img.jpg" alt="Pessoa sorridente planejando viagem no celular" style="width: 100% !important; height: 100% !important; object-fit: cover !important; display: block !important;">
+                <div class="contato-overlay-text">
+                    <h3>Falta pouco para o seu embarque!</h3>
+                    <p>Preencha os dados ao lado e nossa equipe responderá em até 24 horas úteis.</p>
+                </div>
+            </div>
 
-            <h2>Vamos planejar sua próxima viagem?</h2>
+            <!-- Formulário padrão ocupando os 60% restantes da largura -->
+            <div class="form-container" style="width: 60% !important;">
+                <form action="#" method="POST">
+                    <div class="form-group">
+                        <label id="lbl-nome" for="nome">Nome Completo</label>
+                        <input type="text" id="nome" name="nome" placeholder="Digite seu nome" required>
+                    </div>
 
-            <p>Preencha o formulário e conte para nós o que você procura.</p>
+                    <div class="form-group">
+                        <label for="email">E-mail de Contato</label>
+                        <input type="email" id="email" name="email" placeholder="seuemail@exemplo.com" required>
+                    </div>
 
-            <form action="#" method="get">
+                    <div class="form-group">
+                        <label for="destino">Destino de Interesse</label>
+                        <select id="destino" name="destino" required>
+                            <option value="" disabled selected>Selecione um destino</option>
+                            <option value="europa">Europa Histórica</option>
+                            <option value="alpes">Alpes de Aventura</option>
+                            <option value="tropicais">Paraísos Tropicais</option>
+                        </select>
+                    </div>
 
-                <label for="nome">Nome completo</label>
+                    <div class="form-group">
+                        <label for="data">Data de Embarque Pretendida</label>
+                        <input type="date" id="data" name="data" required>
+                    </div>
 
-                <input type="text" id="nome" name="nome" required>
+                    <div class="form-group">
+                        <label for="pessoas">Quantidade de Pessoas</label>
+                        <input type="number" id="pessoas" name="pessoas" min="1" max="50" placeholder="1" required>
+                    </div>
 
-                <label for="email">E-mail</label>
+                    <div class="form-group">
+                        <label for="mensagem">Mensagem Especial / Detalhes</label>
+                        <textarea id="mensagem" name="mensagem" rows="4" placeholder="Alguma observação importante para o hotel ou restrição alimentar?"></textarea>
+                    </div>
 
-                <input type="email" id="email" name="email" required>
-
-                <label for="destino">Destino desejado</label>
-
-                <select id="destino" name="destino" required>
-
-                    <option value="">Selecione um destino</option>
-
-                    <option value="praia">Praias paradisíacas</option>
-
-                    <option value="montanha">Montanhas</option>
-
-                    <option value="europa">Cidades históricas</option>
-
-                    <option value="outro">Outro destino</option>
-
-                </select>
-
-                <label for="data">Data prevista da viagem</label>
-
-                <input type="date" id="data" name="data" required>
-
-                <label for="pessoas">Quantidade de pessoas</label>
-
-                <input type="number" id="pessoas" name="pessoas" min="1" value="1" required>
-
-                <label for="mensagem">Conte mais sobre sua viagem</label>
-
-                <textarea id="mensagem" name="mensagem" rows="5" placeholder="Escreva sua mensagem..."></textarea>
-
-                <button type="submit">Enviar solicitação</button>
-
-            </form>
-
-        </section>
-
+                    <button type="submit" class="btn btn-block">Enviar Solicitação</button>
+                </form>
+            </div>
+        </div>
     </main>
 
     <footer>
-
-        <p>&copy; 2026 TripWay - Todos os direitos reservados.</p>
-
+        <p>&copy; 2026 TripWay Guia de Viagens. Todos os direitos reservados.</p>
     </footer>
 
 </body>
-
 </html>
