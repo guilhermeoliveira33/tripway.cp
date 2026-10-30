@@ -3,45 +3,94 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>TripWay - Pacotes e Serviços</title>
+    <title>Pacotes e Serviços - TripWay</title>
+    <link rel="stylesheet" href="../css/style.css">
 </head>
 <body>
 
     <header>
-        <h1>TripWay</h1>
+        <h1>Trip<span>Way</span></h1>
         <nav>
             <ul>
                 <li><a href="../index.html">Home</a></li>
-                <li><a href="destinos.html">Destinos</a></li>
-                <li><a href="pacotes.html">Pacotes ou Serviços</a></li>
-                <li><a href="contato.html">Contato</a></li>
+                <li><a href="./destinos.html">Destinos</a></li>
+                <li><a href="./pacotes.html">Pacotes</a></li>
+                <li><a href="./contato.html">Contato</a></li>
             </ul>
         </nav>
     </header>
 
     <main>
-        <section>
-            <h2>Pacotes e Serviços</h2>
-            <ul>
-                <li>
-                    <h3>Pacote Fim de Semana</h3>
-                    <p>Ideal para fugir da rotina, incluindo hospedagem e transporte rápido.</p>
-                </li>
-                <li>
-                    <h3>Pacote Aventura Total</h3>
-                    <p>Inclui passeios guiados, esportes radicais e seguro viagem completo.</p>
-                </li>
-                <li>
-                    <h3>Consultoria de Viagem Personalizada</h3>
-                    <p>Montamos um roteiro sob medida de acordo com as suas preferências e orçamento.</p>
-                </li>
-            </ul>
-            <img src="../images/aviao-imagem.avif" alt="imagem de um avião na janela" width="900" height="600">
+        <h2 class="titulo-secao">Nossos Serviços e Consultorias</h2>
+        
+        <!-- Bloco 1: Imagem de Planejamento -->
+        <section class="servico-bloco">
+            <img src="../images/images-planejamento1.jpg" alt="Mapa, óculos e passaporte organizados sobre uma mesa planejando viagem" class="servico-img">
+            <div class="servico-info">
+                <h3>1. Roteiro Personalizado</h3>
+                <p>Nossos consultores montam um cronograma dia a dia adaptado exclusivamente aos seus gostos, hobbies e orçamento. Ideal para quem quer otimizar cada segundo no destino.</p>
+                <a href="./contato.html" class="btn">Solicitar Roteiro</a>
+            </div>
         </section>
+
+        <!-- Bloco 2: Imagem da Montanha (Invertida Horizontalmente via Flexbox) -->
+        <section class="servico-bloco">
+            <img src="../images/montanha-nevada1.png" alt="Picos de montanhas cobertos por neve densa sob o céu limpo" class="servico-img">
+            <div class="servico-info">
+                <h3>2. Aventura no Gelo</h3>
+                <p>Para quem busca o frio e a adrenalina de esportes radicais ou quer relaxar em chalés sofisticados rodeados de neve de forma totalmente segura com nossa assistência global.</p>
+                <a href="./contato.html" class="btn">Pesquisar Voos</a>
+            </div>
+        </section>
+
+        <!-- Bloco 3: Imagem da Tailândia -->
+        <section class="servico-bloco">
+            <img src="../images/destaque-viagem.jpg" alt="Vista aérea de ilhas tropicais cobertas de vegetação cercadas por mar verde-água" class="servico-img">
+            <div class="servico-info">
+                <h3>3. Ecoturismo e Ilhas</h3>
+                <p>Aventure-se por santuários naturais preservados, navegue entre arquipélagos tropicais intocados e descubra o melhor do turismo de isolamento ecológico na Ásia.</p>
+                <a href="./contato.html" class="btn">Ver Condições</a>
+            </div>
+        </section>
+
+        <!-- Elemento de Diferenciação Visual: Tabela Comparativa -->
+        <h3 class="tabela-titulo">Comparativo de Benefícios por Categoria</h3>
+        <div style="overflow-x: auto;">
+            <table class="tabela-precos">
+                <thead>
+                    <tr>
+                        <th>Benefício Incluso</th>
+                        <th>Pacote Mochileiro</th>
+                        <th>Viagem Conforto</th>
+                        <th>TripWay Premium</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Emissão de Passagens</td>
+                        <td>Classe Econômica</td>
+                        <td>Classe Econômica Plus</td>
+                        <td>Executiva / Primeira Classe</td>
+                    </tr>
+                    <tr>
+                        <td>Hospedagem Selecionada</td>
+                        <td>Albergues / Hotéis 2★</td>
+                        <td>Hotéis Comerciais 4★</td>
+                        <td>Resorts de Luxo 5★ All-Inclusive</td>
+                    </tr>
+                    <tr>
+                        <td>Roteiro sob Medida</td>
+                        <td>Guia PDF Padrão</td>
+                        <td>Suporte por Aplicativo</td>
+                        <td>Consultor Exclusivo Conectado 24h</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
     </main>
 
     <footer>
-        <p>&copy; 2026 TripWay - Todos os direitos reservados.</p>
+        <p>&copy; 2026 TripWay Guia de Viagens. Todos os direitos reservados.</p>
     </footer>
 
 </body>

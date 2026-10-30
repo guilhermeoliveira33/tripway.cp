@@ -3,48 +3,61 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>TripWay - Destinos</title>
+    <title>Destinos - TripWay</title>
+    <link rel="stylesheet" href="../css/style.css">
 </head>
 <body>
 
     <header>
-        <h1>TripWay</h1>
+        <h1>Trip<span>Way</span></h1>
         <nav>
             <ul>
                 <li><a href="../index.html">Home</a></li>
-                <li><a href="destinos.html">Destinos</a></li>
-                <li><a href="pacotes.html">Pacotes ou Serviços</a></li>
-                <li><a href="contato.html">Contato</a></li>
+                <li><a href="./destinos.html">Destinos</a></li>
+                <li><a href="./pacotes.html">Pacotes</a></li>
+                <li><a href="./contato.html">Contato</a></li>
             </ul>
         </nav>
     </header>
 
     <main>
-        <section>
-            <h2>Nossos Destinos</h2>
-            
-            <article>
-                <h3>1. Praia Paradisíaca</h3>
-                <img src="../images/praia-destino.avif" alt="praia deslumbrante em por do sol" width="900" height="598">
-                <p>Relaxe nas praias mais bonitas com águas cristalinas e clima perfeito.</p>
+        <h2 class="titulo-secao">Nossos Destinos em Destaque</h2>
+        
+        <div class="cards-container">
+            <!-- Card 1: Cidade Antiga (Do seu ZIP original) -->
+            <article class="card">
+                <img src="../images/cidade-europa.png" alt="Bela cidade europeia clássica com canais">
+                <div class="card-content">
+                    <h3>Europa Histórica</h3>
+                    <p>Caminhe por ruas centenárias, encante-se com a arquitetura neoclássica e explore o berço cultural do ocidente de perto.</p>
+                    <a href="./contato.html" class="btn">Tenho Interesse</a>
+                </div>
             </article>
 
-            <article>
-                <h3>2. Montanhas Nevadas</h3>
-                <img src="../images/montanha-nevada1.png" alt="Montanhas altas cobertas por neve" width="900" height="698">
-                <p>Aventura e paisagens deslumbrantes no topo das montanhas mais belas.</p>
+            <!-- Card 2: Praia Antiga (Do seu ZIP original) -->
+            <article class="card">
+                <img src="../images/praia-destino.avif" alt="Praia paradisíaca tropical com águas cristalinas">
+                <div class="card-content">
+                    <h3>Caribe Tropical</h3>
+                    <p>Desconecte-se da rotina estressante das grandes cidades e venha relaxar à beira-mar sob águas mornas e transparentes.</p>
+                    <a href="./contato.html" class="btn">Tenho Interesse</a>
+                </div>
             </article>
 
-            <article>
-                <h3>3. Cidades Históricas</h3>
-                <img src="../images/cidade-europa.png.png" alt="visão panorâmico de uma cidade historíca com arquitetura antiga" width="900" height="598">
-                <p>Explore a cultura, a arquitetura e a gastronomia das grandes capitais.</p>
+            <!-- Card 3: Imagem Nova de Santorini -->
+            <article class="card">
+                <img src="../images/santorini.jpg". alt="Casas brancas clássicas com cúpulas azuis em Santorini, na Grécia">
+                <div class="card-content">
+                    <h3>Grécia Paradisíaca</h3>
+                    <p>Explore as deslumbrantes vilas de Santorini, contemple o pôr do sol mais famoso do mundo e navegue pelas águas azuis do Mar Egeu.</p>
+                    <a href="./contato.html" class="btn">Tenho Interesse</a>
+                </div>
             </article>
-        </section>
+        </div>
     </main>
 
     <footer>
-        <p>&copy; 2026 TripWay - Todos os direitos reservados.</p>
+        <p>&copy; 2026 TripWay Guia de Viagens. Todos os direitos reservados.</p>
     </footer>
 
 </body>
